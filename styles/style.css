@@ -8,7 +8,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body,
 h1,
 h2,
 h3,
@@ -51,16 +50,13 @@ address {
 }
 
 .header {
-    width: 100%;
     padding: 92px 50px;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 92px 50px;
 }
 
-.header__container {
-    display: grid;
-    grid-template-columns: 0.5fr auto 1fr;
-    align-items: center;
-}
 .header__navigation {
     justify-self: start;
 }
@@ -309,8 +305,7 @@ address {
 }
 
 .footer {
-    padding: 0px 50px 82px 50px;
-    width: 100%;
+    padding: 0 50px 82px;
 }
 
 .footer__container {
