@@ -50,7 +50,6 @@ address {
 }
 
 .header {
-    padding: 92px 50px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
