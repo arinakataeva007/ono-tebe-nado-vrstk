@@ -50,7 +50,7 @@
   width: 148px;
 }
 
-.address__contacts {
+.header .address {
   justify-self: end;
   max-width: 240px;
   font-size: 18px;
@@ -61,8 +61,7 @@
   height: 98px;
 }
 
-.address__phone,
-.address__mail {
+.address__link {
   display: block;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -160,6 +159,16 @@
   flex-wrap: wrap;
 }
 
+.lots__list {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.lots__item {
+    flex: 1;
+}
+
 .card {
   position: relative;
   display: flex;
@@ -173,13 +182,6 @@
   background-size: cover;
   color: rgba(255, 255, 255, 1);
 }
-
-/* .card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-} */
 
 .card__title,
 .card__text {
@@ -278,14 +280,13 @@
   align-items: flex-start;
 }
 
-.footer__contacts {
+.footer .address {
   max-width: 265px;
   font-size: 18px;
   line-height: 1.35;
 }
 
-.footer__phone,
-.footer__mail {
+.address__link {
   display: block;
   text-decoration: underline;
   text-underline-offset: 4px;
